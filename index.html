@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resin Art Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Poppins', sans-serif; background: #121933; color:#ffffff; scroll-behavior:smooth; background-image:url(cross.jpe); #121933
+    background-repeat: no-repeat; background-size:contain;}   
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("Art\ WITH\ OUT\ TEXT.jpg") no-repeat center/cover;
+      color:#fff; text-align:center; padding:120px 20px; animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {font-size:3rem; margin-bottom:15px;}
+    header p {font-size:1.2rem; margin-bottom:25px;}
+    header a {
+      background:#ff6f61; color:#fff; padding:12px 25px; border-radius:30px; text-decoration:none; font-weight:600; transition:0.3s;
+    }
+    header a:hover {background:#ff3b2e; transform:scale(1.05);}
+
+    section {padding:80px 20px; max-width:1200px; margin:auto; animation: fadeIn 1.2s ease-in-out;}
+    h2 {font-size:2.2rem; text-align:center; margin-bottom:40px; color:#ffffff; position:relative;}
+    h2::after {
+      content:''; width:60px; height:3px; background:#ff6f61; display:block; margin:10px auto 0; border-radius:2px;
+    } 
+
+    .about {display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;}
+    .about img {width:100%; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.15); transition:0.3s;}
+    .about img:hover {transform:scale(1.03);}
+    .about p {font-size:1.1rem; line-height:1.6;}
+
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    .gallery img {width:100%; border-radius:15px; transition:0.4s ease; box-shadow:0 3px 15px rgba(0,0,0,0.1); opacity:0; transform:translateY(30px);}
+    .gallery img.show {opacity:1; transform:translateY(0);}
+    .gallery img:hover {transform:scale(1.08);}
+
+    .contact {text-align:center;}
+    .contact p {margin-bottom:20px;}
+    .contact form {max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;}
+    .contact input, .contact textarea {
+      padding:12px; border-radius:10px; border:1px solid #ccc; font-size:1rem; transition:0.3s;
+    }
+    .contact input:focus, .contact textarea:focus {border-color:#ff6f61; outline:none; box-shadow:0 0 8px rgba(255,111,97,0.4);}
+    .contact button {
+      background:#ff6f61; border:none; padding:12px; border-radius:30px;
+      color:#fff; font-weight:600; cursor:pointer; transition:0.3s;
+    }
+    .contact button:hover {background:#ff3b2e; transform:scale(1.05);}
+
+    footer {text-align:center; padding:25px; background:#222; color:#ccc; font-size:0.9rem;}
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width:768px) {
+      header h1 {font-size:2.2rem;}
+      header p {font-size:1rem;}
+      .about {grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <h1>Welcome to YASMIN Art Creations</h1>
+    <p>Unique handmade resin art pieces to brighten your space</p>
+    <a href="#gallery">Explore Gallery</a>
+  </header>
+
+  <section class="about">
+    <img src="unicorn.jpeg" alt="Resin Art">
+    <div>
+      <h2> YASMIN Art</h2>
+      <p>I create modern and elegant resin artworks that combine colors, textures, and creativity. 
+      Each piece is handcrafted with love and designed to bring beauty and inspiration into your home or workspace.</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      
+      <img src="cross.jpeg" alt="Artwork 9">
+      <img src="mus.jpeg" alt="Artwork 10">
+      <img src="mus2.jpeg" alt="Artwork 12">
+      <img src="keychain pic.jpg" alt="Artwork 11">
+      <img src="hind.jpeg" alt="Artwork 13">
+      <img src="pen.jpg" alt="Artwork 5"> 
+      <img src="jewerly.jpg" alt="Artwork 1">
+      <img src="name stand and name plate.jpg" alt="Artwork 14">
+      <img src="quran.jpg" alt="Artwork 7">
+      <img src="sea view.jpg" alt="Artwork 8">
+      <img src="clock.jpg" alt="Artwork 6">
+      
+      <!-- <img src="" alt="Artwork 2">    -->
+      <!-- <img src="file:///C:/Users/Jason/Downloads/Screenshot_20250909_224218.jpg" alt="Artwork 3"> -->
+      <!-- <img src="" alt="Artwork 14"> -->
+      <!-- <img src="file:///C:/Users/Jason/Downloads/Screenshot_20250904_090641.jpg" alt="Artwork 4"> -->
+      <!-- <img src="file:///D:/resin%20art/Resin%20Namestand%20%F0%9F%92%95.jpeg" alt="Artwork 14"> -->
+
+      
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Interested in a custom resin art piece? Get in touch!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Resin Art Creations | Designed with YASMIN Art❤️</p>
+  </footer>
+
+  <script>
+    // Reveal gallery images on scroll
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const revealOnScroll = () => {
+      galleryImages.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50){
+          img.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
